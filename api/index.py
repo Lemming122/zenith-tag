@@ -202,10 +202,10 @@ def titledata():
         "BundleKioskButton": "<color=#ff4141>DISCORD.GG/ZENITHTAG</color>",
         "BundleKioskSign": "<color=#ff4141>DISCORD.GG/ZENITHTAG</color>",
         "BundleLargeSign": "<color=#ff4141>DISCORD.GG/ZENITHTAG</color>",
-        "SeasonalStoreBoardSign": "<color=purple>RATE THE GAME 5 STARS!</color>\n<color=blue>.GG/ZENITHTAG</color>",
+        "SeasonalStoreBoardSign": "<color=red>RATE THE GAME 5 STARS!</color>\n<color=blue>.GG/ZENITHTAG</color>",
         # Text and Messages
         "EmptyFlashbackText": "FLOOR TWO NOW OPEN\n FOR BUSINESS\n\nSTILL SEARCHING FOR\nBOX LABELED 2021",
-        "MOTD": "<color=#FFC0CB>WELCOME TO ZENITH TAG!</color>\n\n<color=#0099c2>CURRENT UPDATE: HALLOWEEN 2023</color>\n<color=#cacfd2>BOOST THE DISCORD FOR EVERY COSMETIC ( NO STAFF )</color>\n<color=#41ff80>HARMONY MADE THIS MOTD</color>\n<color=#6417ff>OUR DEVELOPERS ARE: HARMONY</color>\n<color=#ac1a00>OWNERS OF GAME : DEKODA : SINX </color>\n\n<color=#91A3B0>DISCORD.GG/ZENITHTAG</color>",
+        "MOTD": "<color=#FFC0CB>WELCOME TO ZENITH TAG!</color>\n\n<color=#0099c2>CURRENT UPDATE: HALLOWEEN 2023</color>\n<color=#cacfd2>BOOST THE DISCORD FOR ALL COSMETICS NO STAFF</color>\n<color=#41ff80>HARMONY MADE THIS MOTD</color>\n<color=#6417ff>OUR DEVELOPERS ARE: HARMONY</color>\n<color=#ac1a00>OWNERS OF GAME : SINX AND DEKODA : </color>\n\n<color=#91A3B0>DISCORD.GG/ZENITHTAG</color>",
         "TOBAlreadyOwnCompTxt": "DISCORD.GG/ZENITHTAG",
         "TOBAlreadyOwnPurchaseBundle": "ZENITH TAG",
         "TOBDefCompTxt": "DISCORD.GG/ZENITHTAG",
@@ -213,6 +213,8 @@ def titledata():
         # Legal and Versions
         "EnableCustomAuthentication": True,
         "LatestPrivacyPolicyVersion": "2024.09.20",
+        "LatestTOSVersion": "2024.09.20",
+        "TOS_2024.09.20": "DISCORD.GG/ZENITHTAG",
         "EnableTwoFactorAuth": False,
         "MaxLoginAttempts": 5,
         "SessionTimeoutMinutes": 30,
@@ -336,6 +338,11 @@ def consume_oculus_iap():
         return jsonify({"result": True})
     else:
         return jsonify({"error": True, "message": response.json().get("message", "Consume failed")})
+
+@app.route("/api/GetAcceptedAgreements", methods=['POST', 'GET'])
+def GetAcceptedAgreements():
+    return jsonify({"PrivacyPolicy": "1.1.28", "TOS": "11.05.22.2", "EULA": "2024.09.20"}), 200
+
 @app.route("/api/SubmitAcceptedAgreements", methods=['POST'])
 def SubmitAcceptedAgreements():
     data = request.get_json()
