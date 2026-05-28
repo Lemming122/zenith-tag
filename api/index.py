@@ -213,7 +213,6 @@ def titledata():
         # Legal and Versions
         "EnableCustomAuthentication": True,
         "LatestPrivacyPolicyVersion": "2024.09.20",
-        "LatestTOSVersion": "2024.09.20",
         "EnableTwoFactorAuth": False,
         "MaxLoginAttempts": 5,
         "SessionTimeoutMinutes": 30,
@@ -337,11 +336,6 @@ def consume_oculus_iap():
         return jsonify({"result": True})
     else:
         return jsonify({"error": True, "message": response.json().get("message", "Consume failed")})
-
-@app.route("/api/GetAcceptedAgreements", methods=['POST', 'GET'])
-def GetAcceptedAgreements():
-    return jsonify({"PrivacyPolicy": "1.1.28", "TOS": "11.05.22.2", "EULA": "2024.09.20"}), 200
-
 @app.route("/api/SubmitAcceptedAgreements", methods=['POST'])
 def SubmitAcceptedAgreements():
     data = request.get_json()
