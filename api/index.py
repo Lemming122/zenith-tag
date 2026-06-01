@@ -205,7 +205,7 @@ def titledata():
         "SeasonalStoreBoardSign": "<color=red>RATE THE GAME 5 STARS!</color>\n<color=blue>.GG/ZENITHTAG</color>",
         # Text and Messages
         "EmptyFlashbackText": "FLOOR TWO NOW OPEN\n FOR BUSINESS\n\nSTILL SEARCHING FOR\nBOX LABELED 2021",
-        "MOTD": "<color=#FFC0CB>WELCOME TO ZENITH TAG!</color>\n\n<color=#0099c2>CURRENT UPDATE: HALLOWEEN 2023</color>\n<color=#cacfd2>BOOST THE DISCORD FOR ALL COSMETICS NO STAFF</color>\n<color=#41ff80>HARMONY MADE THIS MOTD</color>\n<color=#6417ff>OUR DEVELOPERS ARE: HARMONY</color>\n<color=#ac1a00>OWNERS OF GAME : SINX AND DEKODA : </color>\n\n<color=#91A3B0>DISCORD.GG/ZENITHTAG</color>",
+        "MOTD": "<color=#FFC0CB>WELCOME TO ZENITH TAG!</color>\n\n<color=#0099c2>CURRENT UPDATE: NOWRUZ FLASH 2024</color>\n<color=#cacfd2>BOOST THE DISCORD FOR ALL COSMETICS NO STAFF</color>\n<color=#41ff80>HARMONY MADE THIS MOTD</color>\n<color=#6417ff>OUR DEVELOPERS ARE: HARMONY</color>\n<color=#ac1a00>OWNERS OF GAME : SINX AND DEKODA : </color>\n\n<color=#91A3B0>DISCORD.GG/ZENITHTAG</color>",
         "TOBAlreadyOwnCompTxt": "DISCORD.GG/ZENITHTAG",
         "TOBAlreadyOwnPurchaseBundle": "ZENITH TAG",
         "TOBDefCompTxt": "DISCORD.GG/ZENITHTAG",
